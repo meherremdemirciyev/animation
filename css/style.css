@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.animation{
+    background-image: url( https://1.bp.blogspot.com/-8rV3cKKlgNM/YIp_S7vA4NI/AAAAAAAAKJ0/TVkZM-6oWWAkv4V3Z-AteeOWpuJXK66XwCLcBGAsYHQ/w1200-h630-p-k-no-nu/PNGKH_0000685.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 105vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.highway{
+    background-image: url(https://tse1.mm.bing.net/th?id=OIP.UfjQVojyeqF0gsNXO4yl3wHaCl&pid=Api&P=0);
+    position: absolute;
+    display: block;
+    height: 200px;
+    width: 500%;
+    bottom: 0;
+    left: 0; 
+    right: 0; 
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: highway 5s linear infinite;
+}
+
+@keyframes highway {
+    100%{
+        transform: translateX(-3400px);
+    }
+}
+
+.city{
+    height: 40vh;
+    width: 500%;
+    background-image: url(http://shrivastavalaw.com/Images/skyline.png);
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: city 20s linear infinite;
+}
+
+@keyframes city{
+   100%{
+    transform: translateX(-1400px);
+   }
+}
+
+.car{
+    width: 400px;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    position: absolute;
+} 
+
+.car img{
+    width: 100%;
+    animation: car 1s linear infinite;
+}
+
+@keyframes car{
+    100%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(1px);
+    }
+    0%{
+        transform: translateY(-1px);
+    }
+}
+
+.wheel{
+    left: 50%;
+    bottom: 170px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+}
+
+.wheel img{
+    width: 70px;
+    height: 70px;
+    animation: wheel 1s linear infinite;
+}
+
+.back-wheel{
+    left: -170px;
+    position: absolute;
+}
+
+.front-wheel{
+    left: 70px;
+    position: absolute;
+}
+
+@keyframes wheel {
+    100%{
+          transform: rotate(360deg);
+    }
+}
