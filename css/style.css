@@ -16,13 +16,10 @@
 .highway{
     background-image: url(https://tse1.mm.bing.net/th?id=OIP.UfjQVojyeqF0gsNXO4yl3wHaCl&pid=Api&P=0);
     position: absolute;
-    display: block;
     height: 200px;
     width: 500%;
     bottom: 0;
     left: 0; 
-    right: 0; 
-    z-index: 1;
     background-repeat: repeat-x;
     animation: highway 5s linear infinite;
 }
@@ -40,9 +37,6 @@
     position: absolute;
     bottom: 200px;
     left: 0;
-    right: 0;
-    display: block;
-    z-index: 1;
     background-repeat: repeat-x;
     animation: city 20s linear infinite;
 }
@@ -58,7 +52,6 @@
     bottom: 100px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 2;
     position: absolute;
 } 
 
@@ -82,9 +75,7 @@
 .wheel{
     left: 50%;
     bottom: 170px;
-    transform: translateX(-50%);
     position: absolute;
-    z-index: 2;
 }
 
 .wheel img{
